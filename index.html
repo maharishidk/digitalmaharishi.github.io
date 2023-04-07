@@ -1,73 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Maharishi Digital Organization</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Link the CSS file -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Maharishi Digital Organization</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Maharishi Digital Organization</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
     </nav>
-    
-    <div class="container mt-4">
-      <h1>Welcome to Maharishi Digital Organization!</h1>
-      <p>We are a non-profit organization dedicated to bringing digital literacy and technology education to underprivileged communities around the world.</p>
-    </div>
-
-    <div class="chatbot-container">
-      <div class="chatbot-header">
-        <h3>Chat with us</h3>
-        <button class="chatbot-close-btn">&times;</button>
-      </div>
-      <div class="chatbot-body">
-        <div class="chatbot-message bot-message">
-          <i class="fas fa-robot bot-icon"></i>
-          <p>Hello! How can I help you today?</p>
-        </div>
-      </div>
-      <div class="chatbot-footer">
-        <p>Powered by <a href="https://openai.com" target="_blank">OpenAI</a></p>
-      </div>
-    </div>
-
-    <div class="widget-container">
-      <div class="widget-wrapper">
-        <div class="widget-button">
-          <i class="fas fa-comment-dots"></i>
-        </div>
-        <iframe class="widget-iframe" srcdoc="<html>
-        </head>
-                
-    </style>*{margin:0;padding:0;}
-    
-    html,body{height:100%;width:100%;}iframe{border:none;height:100%;width:100%;}</style></head><body><iframe src='https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=ec76660b-0c47-407c-a018-7cf48ed3c3dd&serviceInstanceID=4c4fa2d9-8c4e-4d90-88fb-901f54bfe87a' frameborder='0'></iframe></body></html>"></iframe>
-      </div>
-    </div>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/@openai/chatbot@0.1.6/build/static/js/main.ea2678f7.js"></script>
-    <!-- Link the JS file -->
+    <header>
+      <h1>Maharishi Digital Organization</h1>
+    </header>
+    <section id="home">
+      <h2>Welcome to Maharishi Digital Organization</h2>
+      <p>We are a non-profit organization dedicated to using technology for the greater good.</p>
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>At Maharishi Digital Organization, we believe in leveraging technology to make the world a better place. Our team of experts work tirelessly to provide innovative solutions to some of the world's biggest challenges.</p>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Analytics</li>
+        <li>Mobile App Development</li>
+        <li>Cloud Computing</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2023 Maharishi Digital Organization</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
