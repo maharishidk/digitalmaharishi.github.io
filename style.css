@@ -1,0 +1,123 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  .chatbot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chatbot-header h3 {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .chatbot-close-btn {
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .chatbot-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+  }
+  
+  .chatbot-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .bot-message {
+    justify-content: flex-start;
+  }
+  
+  .bot-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .user-message {
+    justify-content: flex-end;
+  }
+  
+  .user-icon {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .chatbot-footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 350px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .widget-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .widget-button {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .widget-button:hover {
+    background-color: #0062cc;
+  }
+  
+  .widget-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .widget-container:hover .widget-iframe {
+    opacity: 1;
+  }
+  
